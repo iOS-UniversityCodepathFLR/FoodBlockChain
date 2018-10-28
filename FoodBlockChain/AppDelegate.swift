@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // view controller currently being set in Storyboard as default will be overridden
             window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "AuthenticatedViewController")
         }
-        return true
+        return true //User app
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

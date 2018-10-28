@@ -10,7 +10,7 @@ The following **required** functionality is completed:
 
 - [x] User can sign up to create a new account (+1pt)
 - [x] User can log in and log out of his or her account (+1pt)
-- [ ] The current signed in user is persisted across app restarts (+1pt)
+- [x] The current signed in user is persisted across app restarts (+1pt)
 - [ ] User can record calorie intake for the day. (+2pt)
 - [ ] User can view past calorie intake (+2pt)
 
@@ -37,7 +37,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/ZNWChDx.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

@@ -10,6 +10,8 @@ import UIKit
 import Parse
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var calorieField: UITextField!
+    @IBOutlet weak var totalCalories: UILabel!
     @IBAction func logOutBTN(_ sender: Any) {
         PFUser.logOutInBackground(block: { (error) in
             if let error = error {
@@ -23,6 +25,11 @@ class HomeViewController: UIViewController {
             }
         })
     }
+    
+    @IBAction func CalculateBTN(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

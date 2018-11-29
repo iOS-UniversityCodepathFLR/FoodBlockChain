@@ -10,8 +10,12 @@ import UIKit
 import Parse
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var calorieField: UITextField!
-    @IBOutlet weak var totalCalories: UILabel!
+    
+    @IBOutlet var calorieResults: UILabel! // show results of calories
+    
+    //calorieResults.text = calorieInput.text
+    var calculations = String()
+    
     @IBAction func logOutBTN(_ sender: Any) {
         PFUser.logOutInBackground(block: { (error) in
             if let error = error {
@@ -26,13 +30,13 @@ class HomeViewController: UIViewController {
         })
     }
     
-    @IBAction func CalculateBTN(_ sender: Any) {
-        
-    }
+    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        calorieResults.text = calculations
         // Do any additional setup after loading the view.
     }
     
@@ -41,10 +45,11 @@ class HomeViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ 
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.performSegue(withIdentifier: "backEnter", sender: nil)
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
-
+*/
 }
